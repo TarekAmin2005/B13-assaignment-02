@@ -11,6 +11,31 @@ body{
     color: white;
     background-color: #1A0B2E;
 }
+/* Button  */
+.btn-sub{ background-image: linear-gradient(to right top,#F7E93F, #FB09B4, #9100F8); padding: 12px 16px; border-radius: 1000px; color: white; font-weight: 600;
+border:none; }
+.btn-sub1{ background-image: linear-gradient(to right top,#F7E93F, #FB09B4, #9100F8); padding: 12px 16px; border-radius: 1000px; color: white; font-weight: 600;
+border:none; }
+
+.btn-sub2{  
+    background: transparent;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    padding: 12px 16px;
+    border-radius: 1000px;
+
+ }
+
+
+
+
+
+
+
+
+
+
+
 
 /* Navigation Bar  */
 .navbar{
@@ -23,6 +48,9 @@ body{
     padding-top: 16px;
     padding-bottom: 16px;
 }
+.hamburger{
+    display:none;
+}
 .links ul{
     display: flex;
     justify-content: space-between;
@@ -33,17 +61,11 @@ body{
     text-decoration: none;
     color: white;
 }
-.btn-sub{ background-image: linear-gradient(to right top,#F7E93F, #FB09B4, #9100F8); padding: 12px 16px; border-radius: 1000px; color: white; font-weight: 600;
-border:none; }
-.btn-sub1{ background-image: linear-gradient(to right top,#F7E93F, #FB09B4, #9100F8); padding: 12px 16px; border-radius: 1000px; color: white; font-weight: 600;
-border:none; }
-.hamburger{
-    display:none;
-}
+
 
 /* Banner Design  */
 .banner-container{
-    border: 2px solid red;
+   
     max-width: 1600px;
     margin: 0 auto;
     background-image: url('../assets/hero-bg.png');
@@ -59,26 +81,35 @@ border:none; }
 
 
 .middle{
-   border: 2px solid yellow; 
+   
    position: relative;
    display: flex;
    justify-content: center;
 }
 .middle .bg-circle{
     width: 100%;  
-    border: 2px solid pink;
+   
 }
 
 .tooltip{
     position: absolute;
     top: 25%;
-    left: 35%;
+    left: 38%;
+}
+.middle p{
+    margin-left: -90px;
+    padding: 8px 16px;
+    background-color: #00FF88;
+    border-radius: 1000px;
+    height: 35px;
+    color: black;
+    font-weight: 600;
 }
 
 
 
 .bottom-info{
-    border: 2px solid aliceblue;
+  
     text-align: center;
 }
 .bottom-info h1{
@@ -95,36 +126,102 @@ border:none; }
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
+
+
+/* About Section  */
+.about-section{
+    align-content: center;
+}
+.about-info{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about-info h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.about-info p{
+    font-weight: 400;
+    margin-bottom: 160px;
+}
+
+.about-data-container{
+display: flex;
+gap: 80px;
+}
+.about-data1{
+    display:flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.about-data2{
+    display:flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.about-data-container {
+    margin: 0 auto;
+    justify-content: center;
+
+}
+.about-data-container h2{
+    font-size: 48px;
+    font-weight: 900;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+.about-data-container p{
+    font-size: 400;
+}
+
+
+
 
 @media screen and (max-width:576px) {
     .links, .btn-sub1{
         display: none;
     }
     .hamburger{
-    display:inline-flex;   
+    display:inline-flex;  
+    margin-right: 20px; 
 }
 
 .middle {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-right: 10px;
 }
 .middle .bg-circle {
-    width: 65%;  
+    width: 80%;  
    
 }
 .tooltip{
     position: absolute;
     top: 25%;
-    left: 38%;
+    left: 43%;
+    width: 30%;
     
 }
 .tooltip img{
     width: 75%;
 }
+
 .bottom-info h1{
     font-size: 40px;
 }
+.banner-container{
+    margin: 0;
+}
+.about-section{
+    padding: 0 20px;
+}
+.about-data-container{
+    flex-direction: column;
+}
+
 }
 
 
